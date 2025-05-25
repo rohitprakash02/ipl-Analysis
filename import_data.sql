@@ -1,0 +1,15 @@
+#import_data
+
+LOAD DATA LOCAL INFILE '/home/rohit/ipl/matches.csv'
+INTO TABLE matches
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA LOCAL INFILE '/home/rohit/ipl/deliveries.csv'
+INTO TABLE deliveries
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
